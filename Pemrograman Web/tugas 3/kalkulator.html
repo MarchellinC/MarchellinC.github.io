@@ -1,0 +1,72 @@
+<!-- Nama : Marchellin Chenika
+NPM : 140810230002
+Kelas : B
+Deskripsi : Buat halaman html untuk menampilkan aplikasi
+program kalkulator sederhana dengan
+menggunakan javascript.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <link rel="stylesheet" type="text/css" href="stylekalkulator.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>KALKULATOR</h2>
+            <table>
+                <tr>
+                    <th>Bil 1</th>
+                    <td><input type="number" id="bil1" placeholder="Masukkan bil1"></td>
+                </tr>
+
+                <tr>
+                    <th>Bil 2</th>
+                    <td><input type="number" id="bil2" placeholder="Masukkan bil2"></td>
+                </tr>
+
+                <tr>
+                    <th>Hasil</th>
+                    <td id="hasil"></td>
+                </tr>
+            </table>
+            <button onclick="Menghitung('+')">+</button>
+            <button onClick="Menghitung('-')">-</button>
+            <button onClick="Menghitung('*')">X</button>
+            <button onclick="Menghitung('/')">/</button>
+        </div>
+
+        <script>
+            function Menghitung(operator){
+                var bil1 = parseFloat(document.getElementById("bil1").value);
+                var bil2 = parseFloat(document.getElementById("bil2").value);
+                var hasil=0;
+
+                switch(operator){
+                    case '+':
+                        hasil = bil1+bil2;
+                        break;
+                    
+                    case '-':
+                        hasil = bil1-bil2;
+                        break;
+
+                    case '*':
+                        hasil = bil1*bil2;
+                        break;
+
+                    case '/':
+                        if(bil2 == 0){
+                            alert("Tidak dapat membagi bilangan dengan 0");
+                        }
+                        hasil = bil1/bil2;
+                        break;
+                }
+
+                document.getElementById("hasil").textContent = hasil;
+            }
+        </script>
+    </body>
+</html>

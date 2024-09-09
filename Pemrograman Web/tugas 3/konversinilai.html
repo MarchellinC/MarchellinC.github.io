@@ -1,0 +1,74 @@
+<!-- Nama : Marchellin Chenika
+NPM : 140810230002
+Kelas : B
+Deskripsi : Buat halaman html untuk mengkonversi nilai angka
+menjadi nilai huruf dengan menggunakan javascript
+Konversi :
+0-40 =E
+41-55=D
+56-60=C
+61-65=BC
+66-70=B
+71-80=AB
+81-100=A -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konversi Nilai</title>
+        <link rel="stylesheet" type="text/css" href="stylekonversi.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>KONVERSI NILAI</h2>
+            <table>
+                <tr>
+                    <th>Nilai</th>
+                    <th></th>
+                    <th>Huruf Mutu</th>
+                </tr>
+                <tr>
+                    <td><input type="number" id="nilai" min="0" max="100" placeholder="Masukkan nilai"></td>
+                    <td><button onclick="convertNilai()">Konversi Nilai</button></td>
+                    <td class="tabel-mutu"><div id="hurufMutu"></div></td>
+                </tr>
+            </table>
+        </div>
+
+        
+
+        <script>
+            function convertNilai(){
+                const nilai = document.getElementById("nilai").value;
+                var hurufMutu = '';
+                if(nilai >= 0 && nilai <= 40){
+                    hurufMutu = "E";
+                }
+                else if(nilai >= 41 && nilai <= 55){
+                    hurufMutu = "D";
+                }
+                else if(nilai >= 56 && nilai <= 60){
+                    hurufMutu = "C";
+                }
+                else if(nilai >= 61 && nilai <= 65){
+                    hurufMutu = "BC";
+                }
+                else if(nilai >= 66 && nilai <= 70){
+                    hurufMutu = "B";
+                }
+                else if(nilai >= 71 && nilai <= 80){
+                    hurufMutu = "AB";
+                }
+                else if(nilai >= 81 && nilai <= 100){
+                    hurufMutu = "A";
+                }
+                else{
+                    hurufMutu = "Nilai Tidak Valid";
+                }
+
+                document.getElementById('hurufMutu').textContent = hurufMutu;
+            }
+        </script>
+    </body>
+</html>

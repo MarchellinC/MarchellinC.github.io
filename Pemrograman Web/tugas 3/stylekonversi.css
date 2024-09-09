@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(174, 238, 238);
+    display: flex;
+    margin:20px;
+}
+
+.container{
+    background-color: beige;;
+    margin:auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    border-bottom:double;
+    margin-top: 10px;
+}
+
+table{
+    border-top: double;
+    border-spacing: 10px 5px;
+}
+
+input{
+    padding: 5px;
+    text-align: center;
+}
+
+button{
+    padding: 5px;
+}
+
+#hurufMutu{
+    padding: 5px;
+    border:1px solid;
+    border-radius: 2px;
+    background-color: white;
+    height: 18px;
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin:30px;
+    background-color: #f8f8c6;
+    display: inline-block;
+}
+
+h2{
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    border-color: black;
+    padding: 5px;
+    background-color: rgb(247, 236, 223);
+    color: blue;
+}
+
+table{
+    position: center;
+    border-color: rgb(0, 0, 0);
+    border-style: double;
+    border-radius: 5px;
+    width: auto;
+    margin: 0 auto;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    border: 1px solid;
+    background-color:blanchedalmond
+}
+
+td{
+    border: 1px solid;
+    padding-left: 5px;
+    background-color: rgb(247, 235, 220);
+}
+
+img{
+    width: 120px;
+    height: 160px;
+}
+
+a{
+    color: blue;
+}
