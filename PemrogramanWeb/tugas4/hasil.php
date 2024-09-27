@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </tr>
             </table>
 
-            <a href="form.php">Kembali ke Form</a>
+            <a href="form.html">Kembali ke Form</a>
         </div>
     </body>
 </html>
