@@ -1,0 +1,65 @@
+*, body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: beige;
+}
+
+.container{
+    background-color: rgb(186, 253, 253);
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 25px;
+    width: 450px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: double;
+}
+
+table{
+    border-top: double;
+    display: flex;
+}
+
+th{
+    text-align: left;
+    vertical-align: top;
+    padding-right: 15px;
+}
+
+input{
+    padding: 2px;
+}
+
+textarea{
+    padding: 2px;
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+}
+
+input[id="perempuan"]{
+    margin-left: 5px;
+}
+
+.container_hasil{
+    background-color: rgb(199, 255, 236);
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 25px;
+    width: 800px;
+}
+
+.container_hasil th, .container_hasil td{
+    border: 1px solid;
+    padding: 2px 5px;
+    text-align: center;
+}
