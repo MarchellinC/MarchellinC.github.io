@@ -48,7 +48,7 @@
                                 <td>
                                     <div class="button">
                                         <button class="aksi-btn edit" onClick="document.location.href='<?php echo "edit.php?id=" . $row["npm"];?>'">Edit</button>
-                                        <button class="aksi-btn delete" onClick="document.location.href='<?php echo "delete.php?id=" . $row["npm"];?>'">Delete</button>
+                                        <button class="aksi-btn delete" onClick="confirmDelete('<?php echo $row["npm"];?>')">Delete</button>
                                     </div>
                                 </td>
                     </tr>
@@ -60,6 +60,14 @@
                         ?>
                 </tbody>
             </table>
+            <a href="index.php">Tambahkan Data</a>
         </div>
+        <script>
+            function confirmDelete(npm) {
+                if (confirm("APakah kamu yakin untuk menghapus data\nNPM: " + npm + "?")) {
+                    window.location.href = 'delete.php?npm=' + npm;
+                }
+            }
+        </script>
     </body>
 </html>
