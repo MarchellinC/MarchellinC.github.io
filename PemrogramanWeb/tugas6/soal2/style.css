@@ -1,0 +1,40 @@
+*, body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: palevioletred;
+}
+
+.container{
+    width: fit-content;
+    background-color: pink;
+    border-radius: 8px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: double;
+    margin-bottom: 10px;
+}
+
+table{
+    text-align: left;
+    padding-left: 2px;
+}
+
+input{
+    border-radius: 3px;
+}
+
+button[name='logout']{
+    color: bold;
+    padding: 5px 120px;
+    background-color: rgb(247, 219, 224);
+    border-radius: 3px;
+}
